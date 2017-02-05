@@ -1,0 +1,8 @@
+---
+package_names:
+- texlive-latex-base
+- texlive-latex-base-doc
+- texlive-latex-extra
+- texlive-latex-extra-doc
+- texlive-latex-recommended
+- texlive-latex-recommended-doc
