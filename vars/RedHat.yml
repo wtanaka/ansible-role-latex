@@ -1,0 +1,10 @@
+---
+package_names:
+- texlive
+- texlive-latex
+- texlive-xetex
+- texlive-collection-latex
+- texlive-collection-latexrecommended
+- texlive-xetex-def
+- texlive-collection-xetex
+- texlive-collection-latexextra
