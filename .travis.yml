@@ -10,8 +10,8 @@ services:
 script:
 - >
   wget -O- bit.ly/ansibletest | env
-  DOCKER_IMAGES="centos:5 centos:7 ubuntu:12.04 ubuntu:16.04
-  fedora:20 fedora:24 debian:7 debian:stretch"
+  DOCKER_IMAGES="centos:6 centos:7 ubuntu:12.04 ubuntu:16.04
+  fedora:20 fedora:25 debian:7 debian:stretch"
   ANSIBLE_VERSIONS="1.4"
   sh
 after_failure:
