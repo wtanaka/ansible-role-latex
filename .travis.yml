@@ -22,8 +22,6 @@ env:
 - ANSIBLE_VERSIONS=2.5.1 DOCKER_IMAGES=fedora:28
 - ANSIBLE_VERSIONS=1.4 DOCKER_IMAGES=fedora:29
 - ANSIBLE_VERSIONS=2.5.1 DOCKER_IMAGES=fedora:29
-- ANSIBLE_VERSIONS=1.4 DOCKER_IMAGES=fedora:30
-- ANSIBLE_VERSIONS=2.5.1 DOCKER_IMAGES=fedora:30
 - ANSIBLE_VERSIONS=1.4 DOCKER_IMAGES=ubuntu:12.04
 - ANSIBLE_VERSIONS=2.5.1 DOCKER_IMAGES=ubuntu:12.04
 - ANSIBLE_VERSIONS=1.4 DOCKER_IMAGES=ubuntu:14.04
@@ -38,6 +36,3 @@ after_failure:
 - cat role-tester-ansible-master/.kitchen/logs/*.log | grep -v '^I, '
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
-  email:
-    recipients:
-      secure: v2U+R6bxSApkxmGYw4+4zKXMuYCv5uARF2qEPxB8ZSpZ9qP4bsiFmZ2lgj9h9VZDuMBa6+NvlsHSjEFtJJ1HB6V9BsnX9MXtyRwkeFuXf8PY6biDbuTJm3cIjiEj6+CrUKHaCN6pIauHztHEcRXLq2MYuCUQALT6UlTx/r/4e/pvP5lco4MUmy1aRXJji736tOn3pjr8i3kC26JYiE8ta9kgahjqDPhq5cYKfg7DmwE1ieSzcSUElEY7+8ht1gYNd+5h04j8hUd7eOaalxszF19SSv18DSDAs6clGYQFQ9QvlnZ+Ipu31yLA1q4WIC1Wo55w/Iwbbm2RVCsoAU9iz8Sn7wRNT66kB/dWImeWE9GiSxqF+t2asXdpxqDO0bdWpwqEEY/ZFzPpv0D0KhS719LZLLSYAAwP0KkNUFeaiCYij7PSB+ingO0K/SSyiRdd1sDQfHUPwUPE0M2XnE29AjtrcbC/YU0S/tM6fwxjwDcyQdUA9ptTCH+8eka4etpjlQANxOnXb2HCBXB42JWWsgTBcDdMVnQtV61c+UY4sC0E3fTdvGl+3KAYIql3h8wpAKOP4+11v/3hhQA8bvIdYt53v/weUqne/AO2NsSelpT1+zLEy4ZjgCAaxZIo+fdXmOfIqwmPN34k7HPZblC4WGeLwTL7MQPwMD/fWi0LI2g=
